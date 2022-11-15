@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 400px;
+}
+
+#progress .times,
+.card-footer,
+.container-volume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-volume i {
+  margin-right: 5px;
+}
+
+li.playing {
+  background-color: #5f9df7;
+  color: #fff;
+}
+
+li {
+  cursor: pointer;
+}
+li:hover {
+  background-color: #f4f4f4;
+}
+li.playing:hover {
+  background-color: #5f9df7 !important;
+}
+#controls {
+  position: relative;
+}
+#repeat {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+#repeat i {
+  font-size: 25px;
+}
+#repeat.on::after {
+  content: "1";
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 3px;
+  left: 8px;
+}
+li.playing.dark {
+  background-color: #f4f4f4 !important;
+  color: #333 !important;
+}
+li.playing.dark:hover {
+  background-color: #f4f4f4 !important;
+  color: #333 !important;
+}
+li.dark:hover {
+  background-color: #222 !important;
+}
+li {
+  transition: all 0.3s;
+}
+.dark-mode {
+  position: absolute;
+  font-size: 25px;
+  top: 2px;
+  left: 1px;
+}
+.dark {
+  color: #f4f4f4 !important;
+  background-color: #333 !important;
+}
+
+.card {
+  transition: all 0.3s;
+}
+
+/* #music-list li {
+  background-color: #333;
+} */
